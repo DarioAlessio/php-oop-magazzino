@@ -24,11 +24,12 @@
             class Store{
               public $name;
               public $location;
-              public $products = [];
+              public $products;
 
-              public function __construct($name, $location){
+              public function __construct($name, $location,$products = []){
                 $this-> name = $name;
                 $this-> location = $location;
+                $this -> products = $products;
               }
 
             }
